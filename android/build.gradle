@@ -42,7 +42,9 @@ dependencies {
     debugImplementation("com.appspector:android-sdk:1.4.+") {
         exclude group:"org.jetbrains.kotlin"
     }
-    releaseImplementation "com.appspector:android-sdk-noop:1.4.+"
+    releaseImplementation "com.appspector:android-sdk-noop:1.4.+" {
+        exclude group:"org.jetbrains.kotlin"
+    }
 
     implementation 'androidx.annotation:annotation:1.2.0'
 }
